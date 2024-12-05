@@ -1,6 +1,6 @@
 import sqlite3 as sq
 
-db = sq.connect('bot/tg.db')
+db = sq.connect('C:\\Users\\User\\Downloads\\pythonProjects-main\\pythonProjects-main\\bot\\tg.db')
 cur = db.cursor()
 
 async def start():

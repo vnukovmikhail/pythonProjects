@@ -17,6 +17,12 @@ async def reply_handler(message:Message):
                         f'поцеловал(-а) [{message.reply_to_message.from_user.first_name}]({message.reply_to_message.from_user.url})', parse_mode=ParseMode.MARKDOWN)
     await message.reply_to_message.reply_sticker('CAACAgIAAxkBAAIMFGdQQ0DF55mLCD7-gKKSMlb5k1YKAAImHAAC5cyZSvgp6N9Tw5uHNgQ')
 
+# @router.message()
+# async def reply_handler(message: Message):
+#     print(message.text)
+
+
+
 @router.message(Command('rating'))
 async def rating(message: Message):
     res = ''
